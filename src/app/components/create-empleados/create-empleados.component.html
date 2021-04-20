@@ -1,0 +1,28 @@
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3>Agregar empleados</h3>
+                    <form #createForm="ngForm" class="m-4" (ngSubmit)="createEmployer(createForm)">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control form-control-lg" placeholder="Nombre" [(ngModel)]='datos.name'>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="surname" class="form-control form-control-lg" placeholder="Apellido" [(ngModel)]='datos.surname'>
+                            </div>
+                            <input type="text" name="dId" placeholder="Documento" class="form-control form-control-lg mt-3 m-2" [(ngModel)]='datos.dId'>
+                            <input type="number" name="salary" placeholder="Salario" class="form-control form-control-lg m-2" [(ngModel)]='datos.salary'>
+                            <div class="col">
+                                <input type="submit" value="Guardar" class="btn btn-success col">
+                            </div>
+                            
+                        </div>
+                    </form>
+             
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

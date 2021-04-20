@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "crud-empleyed": {
+      "hosting": {
+        "empleados": [
+          "crud-empleyed"
+        ]
+      }
+    }
+  }
+}
